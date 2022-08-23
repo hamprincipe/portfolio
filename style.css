@@ -1,0 +1,91 @@
+/*
+
+IDs are the most specific selector in CSS, followed by classes, and finally, type. For example, consider the following HTML and CSS:
+    -IDs are the most specific, because they should only be used on a single element.
+
+<h1 class='headline'>Breaking News</h1>
+h1 {
+  color: red;
+}
+.headline {
+  color: firebrick;
+}
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('test.jpg');
+}
+
+.navigation ul {
+  background-color: lightblue;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border: 1px solid blue;
+}
+
+/* this is what a class selector ruleset looks like */
+.navigation li.donate {
+  visibility: visible;
+}
+
+p {
+  background-color: pink;
+  opacity: 0.75;
+}
+img[src*='biopic'] {
+    height: 200px;
+  }
+
+h2 {
+    font-size: 2em;
+    color: blueviolet;
+}
+
+/* a[href] allows for all the lines starting with this to follow this descriptor */
+a[href*='hamprincipe'] {
+    color: orange;
+  }
+
+a:hover {
+    background-color: red;
+  }
+
+.caption {
+  background-color: white;
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 14px;
+  margin-left: 20px;
+  padding: 10px;
+  position: relative;
+  top: 80%;
+  width: 60%;
+  opacity: 0.75;
+  color: black;
+}
+
+/* .image {
+  background-image: url('test.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+} */
+
+#main {
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid lavender;
+  padding: 200px;
+  text-align: center;
+  width: 500px;
+  height: 0px auto;
+  overflow: hidden;
+}
